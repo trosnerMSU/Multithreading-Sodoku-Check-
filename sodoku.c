@@ -66,7 +66,7 @@ fclose(fp);
 /*initialize Column Params*/
 for(i = 0; i < 9; i++){
 	index_tid[i].topRow = 0;
-	index_tid[i].bottomRow = 0;
+	index_tid[i].bottomRow = 9;
 	index_tid[i].leftCol = i;
 	index_tid[i].rightCol = i;
 }
@@ -76,7 +76,7 @@ for(i = 9; i < 18; i++){
 	index_tid[i].topRow = i;
 	index_tid[i].bottomRow = i;
 	index_tid[i].leftCol = 0;
-	index_tid[i].rightCol = 0;
+	index_tid[i].rightCol = 9;
 }
 
 /*Initialize Subgrid Params*/
